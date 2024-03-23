@@ -1,0 +1,37 @@
+body{
+  background-image: url(GB.png);
+  background-size: 100%;
+  background-color: aqua;
+}
+.container {
+  background-image: url(bw.png);
+  background-size: 7500%;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 300px;
+  box-shadow: 3px 3px 3px 3px;
+  border-top: red;
+  border-bottom:none;
+}
+.todo{
+  display:flex;
+  justify-content:space-between ;
+  padding: 5 ;
+}
+.todo__value{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  flex-grow: 1 ;
+}
+.todo:has(.todo__checkbox:checked)
+{
+  color:black;
+  background:rgba(103, 71, 71, 0.314);
+  text-decoration: line-through;
+  order: 1;
+
+}
